@@ -9,7 +9,14 @@
  * Updated: Application depends on the domain name/server_name.
  */
 
-define('SERVER_NAME', $_SERVER['SERVER_NAME']);
+$server_name = $_SERVER['SERVER_NAME'];
+if (0 === strpos($server_name, 'beta'))
+{
+    $server_name = substr($server_name, strpos($server_name, '.') + 1);
+}
+
+define('SERVER_NAME', $server_name);
+
 $application = '../apps/' . SERVER_NAME;
 
 /**
