@@ -23,4 +23,4 @@ define('AWS_ENABLE_EXTENSIONS', 'false');
  */
 include_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'library/sdk.class.php';
 
-KoAS3::$config = Kohana::config('amazons3');
+KoAS3::$config = Kohana::$config->load('amazons3');
