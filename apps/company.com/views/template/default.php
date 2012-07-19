@@ -13,9 +13,7 @@ else
 	// Clearing the realpath() cache is only possible PHP 5.3+
 	clearstatcache(TRUE);
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,12 +24,12 @@ else
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/scaffolding.css" rel="stylesheet">
-    <link href="assets/css/design.css" rel="stylesheet">
+    <link href="http://company-site.s3.amazonaws.com/site-assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://company-site.s3.amazonaws.com/site-assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://company-site.s3.amazonaws.com/site-assets/css/scaffolding.css" rel="stylesheet">
+    <link href="http://company-site.s3.amazonaws.com/site-assets/css/design.css" rel="stylesheet">
 
-    <link href="assets/css/flexslider.css" rel="stylesheet">
+    <link href="http://company-site.s3.amazonaws.com/site-assets/css/flexslider.css" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 
@@ -41,18 +39,18 @@ else
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="http://company-site.s3.amazonaws.com/site-assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://company-site.s3.amazonaws.com/site-assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://company-site.s3.amazonaws.com/site-assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://company-site.s3.amazonaws.com/site-assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://company-site.s3.amazonaws.com/site-assets/ico/apple-touch-icon-57-precomposed.png">
 
   </head>
-<body>
+<body class="<?php echo !empty($body_class) ? $body_class : ""?>">
 
 <?php echo $header?>
 
-<div class="container-fluid feed">
+<div class="container-fluid <?php echo !empty($page) ? $page : ""?>">
 	<?php echo $body?>
 	
 	 <footer class="footer">
@@ -64,15 +62,15 @@ else
 
 
  	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/jquery.pageslide.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/jquery.flexslider.js"></script>
-    <script src="assets/js/waypoints.js"></script>
-    <script src="assets/js/application.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/jquery.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/jquery.pageslide.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/bootstrap-transition.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/bootstrap-alert.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/bootstrap-button.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/jquery.flexslider.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/waypoints.js"></script>
+    <script src="http://company-site.s3.amazonaws.com/site-assets/js/application.js"></script>
 
 </body>
 </html>

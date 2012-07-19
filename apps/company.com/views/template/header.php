@@ -1,11 +1,12 @@
+<?php if($logged_in):?>
 <div class = "navbar clientBranding clearfix">
 	<img class="clientLogo" src="http://corporate.matchmovegames.com/wp-content/uploads/2012/01/logo1.png"/>
 </div>
-
+<?php endif;?>
 <div class="navbar navbarMain clearfix">
 	<div class="navbar-inner colorGradient mainNav">
 		<div class="container-fluid">
-			<a class="brand hidden-phone" href="#">Company</a>
+			<a class="brand hidden-phone" href="/">Company</a>
 			<a href="#modal" class="hidden-desktop sideNav floatLeft marginRight10 marginTop10"><i class="icon-th-large icon-white"></i></a>
 			
 			<?php echo !empty($notification) ? $notification : "";?>
@@ -16,16 +17,16 @@
 					</form>
 				</li>
 				<li class="">
-					<a href="feed.html"><i class="icon-white icon-tasks navIcon"></i>Feeds</a>
+					<a href="/profile/feeds"><i class="icon-white icon-tasks navIcon"></i>Feeds</a>
 				</li>
 				<li class="">
-					<a href=""><i class="icon-white icon-info-sign navIcon"></i>Profile</a>
+					<a href="/profile/feeds/<?php echo !empty($user->id) ? $user->id : ""?>"><i class="icon-white icon-info-sign navIcon"></i>Profile</a>
 				</li>
 				<li class="">
-					<a href="people.html"><i class="icon-white icon-user navIcon"></i>People</a>
+					<a href="/people"><i class="icon-white icon-user navIcon"></i>People</a>
 				</li>
 				<li class="">
-					<a href=""><i class="icon-white icon-th navIcon"></i>Group</a>
+					<a href="/group"><i class="icon-white icon-th navIcon"></i>Group</a>
 				</li>
 				<?php echo !empty($dropdown) ? $dropdown : "";?>
 			</ul>
@@ -54,7 +55,7 @@
 			</li>
 			<li class="paddinTop10 clearfix paddingBottom10">
 				<div class="imgSmall floatLeft marginRight10 marginTop10 marginBottom10">
-					<img src="assets/images/profile1-40.gif">
+					<img src="http://company-site.s3.amazonaws.com/site-assets/images/profile1-40.gif">
 				</div>
 				<a href="#">Sign Out</a>
 			</li>

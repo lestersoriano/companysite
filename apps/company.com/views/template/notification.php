@@ -11,7 +11,7 @@
 			<li class="clearfix borderBottom">
 				<div class="leftSection floatLeft borderRight">
 					<div class="imgSmall">
-						<img src="assets/images/profile1-40.gif" />
+						<img src="http://company-site.s3.amazonaws.com/site-assets/images/profile1-40.gif" />
 					</div>
 				</div><!-- end left section -->
 				<div class="rightSection floatleft">
@@ -23,7 +23,7 @@
 			<li class="clearfix borderBottom">
 				<div class="leftSection floatLeft borderRight">
 					<div class="imgSmall">
-						<img src="assets/images/profile1-40.gif" />
+						<img src="http://company-site.s3.amazonaws.com/site-assets/images/profile1-40.gif" />
 					</div>
 				</div><!-- end left section -->
 				<div class="rightSection floatleft">
@@ -35,7 +35,7 @@
 			<li class="clearfix borderBottom">
 				<div class="leftSection floatLeft borderRight">
 					<div class="imgSmall">
-						<img src="assets/images/profile1-40.gif" />
+						<img src="http://company-site.s3.amazonaws.com/site-assets/images/profile1-40.gif" />
 					</div>
 				</div><!-- end left section -->
 				<div class="rightSection floatleft">
@@ -47,7 +47,7 @@
 			<li class="clearfix borderBottom">
 				<div class="leftSection floatLeft borderRight">
 					<div class="imgSmall">
-						<img src="assets/images/profile1-40.gif" />
+						<img src="http://company-site.s3.amazonaws.com/site-assets/images/profile1-40.gif" />
 					</div>
 				</div><!-- end left section -->
 				<div class="rightSection floatleft">

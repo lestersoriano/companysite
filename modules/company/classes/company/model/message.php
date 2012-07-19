@@ -104,7 +104,10 @@ class Company_Model_Message extends ORM
         return $this;
     }
     
-   
+    public function get_alert(){
+    	echo "alert";
+    }
+   	
 	
 	public function get_user(){
 		

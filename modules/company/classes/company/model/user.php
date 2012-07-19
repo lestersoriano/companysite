@@ -6,29 +6,7 @@ class Company_Model_User extends Model_Auth_User
 	const DEFAULT_PHOTO = 'https://s3-ap-southeast-1.amazonaws.com/site-assets2/images/common/profile-full.gif';
 	const DEFAULT_THUMB = 'https://s3-ap-southeast-1.amazonaws.com/site-assets2/images/common/profile-50x50.gif';
 	
-	public function rules()
-	{
-		return array(
-			'username' => array(
-				array('not_empty'),
-				array('min_length', array(':value', 8)),
-				array('max_length', array(':value', 35)),
-				array(array($this, 'username_available'), array(':validation', ':field')),
-			),
-			'password' => array(
-				array('not_empty'),
-			),
-			'email' => array(
-				array('not_empty'),
-				array('min_length', array(':value', 8)),
-				array('max_length', array(':value', 255)),
-				array('email'),
-				array(array($this, 'email_available'), array(':validation', ':field')),
-			)
-		);
-	}
-	
-	
+
 	public function get_displayname()
 	{
 
@@ -59,7 +37,8 @@ class Company_Model_User extends Model_Auth_User
 		}
 	}
 	
-	
+	/*
+
 	public function get_full_name()
 	{
 		if(!$this->loaded()){
@@ -84,6 +63,7 @@ class Company_Model_User extends Model_Auth_User
 			return ucwords($data["username"]);
 		}
 	}
+*/
 	
 	
 	public function get_feeds(){
@@ -231,7 +211,7 @@ class Company_Model_User extends Model_Auth_User
 	}
 	
 	
-	public function build($form);
+	public function build($form)
 	{
 		$post = Validation::factory($form);
 			

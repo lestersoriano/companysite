@@ -33,7 +33,7 @@ class Layout_Controller extends Controller
     /**
      * footer template file
      */
-    public $footer = 'template/footer';
+    public $footer = null;
 
     /**
      * layout object
