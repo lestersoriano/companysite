@@ -110,6 +110,7 @@ Kohana::modules(array(
 	 'image'      => MODPATH.'image',      // Image manipulation
 	 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 	 'company'    => MODPATH.'company',        // Company Models
+	 'layout'     => MODPATH.'layout',      // template
 	 'aws'        => MODPATH.'aws',        // Company Models
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation

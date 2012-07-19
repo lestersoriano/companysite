@@ -81,7 +81,7 @@ class Kohana_Auth_ORM extends Auth {
 			// Create a hashed password
 			$password = $this->hash($password);
 		}
-
+		
 		// If the passwords match, perform a login
 		if ($user->has('roles', ORM::factory('role', array('name' => 'login'))) AND $user->password === $password)
 		{

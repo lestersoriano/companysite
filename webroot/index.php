@@ -62,8 +62,8 @@ define('EXT', '.php');
  * When using a legacy application with PHP >= 5.3, it is recommended to disable
  * deprecated notices. Disable with: E_ALL & ~E_DEPRECATED
  */
-error_reporting(E_ALL | E_STRICT);
-
+error_reporting(E_ALL);
+ini_set('display_errors', '2');
 /**
  * End of standard configuration! Changing any of the code below should only be
  * attempted by those with a working knowledge of Kohana internals.
